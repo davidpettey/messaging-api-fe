@@ -1,6 +1,6 @@
 // Base API client for making requests to the backend
 
-const DEFAULT_API_URL = 'http://localhost:3000';
+const DEFAULT_API_URL = 'https://messaging-api.cerebralvalley.ai';
 
 type RequestOptions = {
   headers?: Record<string, string>;

@@ -62,7 +62,7 @@ export default function ConversationList({ bots, instanceId }: ConversationListP
     // Only initialize once
     if (!wsServiceRef.current) {
       console.log(`[${instanceId}] Initializing WebSocketService`);
-      wsServiceRef.current = new WebSocketService(`ws://localhost:3000/messaging`);
+      wsServiceRef.current = new WebSocketService(`wss://messaging-api.cerebralvalley.ai/messaging`);
     }
     
     // Set up event listeners

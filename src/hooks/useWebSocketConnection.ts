@@ -15,7 +15,7 @@ type UseWebSocketConnectionProps = {
 };
 
 export function useWebSocketConnection({
-  url = 'ws://localhost:3000/messaging',
+  url = 'wss://messaging-api.cerebralvalley.ai/messaging',
   autoConnect = false,
   onMessage,
   onConnect,

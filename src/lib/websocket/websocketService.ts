@@ -35,9 +35,9 @@ export class WebSocketService {
   private statusChangeCallbacks: ((status: WebSocketStatus) => void)[] = [];
   private eventLogCallbacks: ((events: WebSocketEvent[]) => void)[] = [];
   private userId: string = "";
-  private apiKey: string = "test_key";
+  private apiKey: string = "test_key"; // THIS WILL BE GOING AWAY
 
-  constructor(private url: string = 'ws://localhost:3000/messaging') {}
+  constructor(private url: string = 'wss://messaging-api.cerebralvalley.ai/messaging') {}
 
   // Set the user ID for this connection
   setUserId(userId: string): void {
