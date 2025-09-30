@@ -190,8 +190,9 @@ export interface SendMessageDto {
   content: string;
   messageType?: MessageType;
   replyToId?: string;
+  role?: ChatRoleType.USER;
   attachments?: MessageAttachmentDto[];
-  mentions?: MessageMentionDto[];   // Added support for user mentions
+  mentions?: MessageMentionDto[];   
   metadata?: Record<string, any>;
 }
 
